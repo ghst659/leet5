@@ -1,6 +1,7 @@
 package tc.leet;
 
 import java.util.Deque;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 
@@ -79,6 +80,24 @@ public class IntegerToRoman {
             entry(500000, ""),
             entry(1000000, "")
     );
+    /*
+    private static final Map<Integer,String> DIGITS = new HashMap<>();
+    static {
+        DIGITS.put(1, "I");
+        DIGITS.put(5, "V");
+        DIGITS.put(10, "X");
+        DIGITS.put(50, "L");
+        DIGITS.put(100, "C");
+        DIGITS.put(500, "D");
+        DIGITS.put(1000, "M");
+        DIGITS.put(5000, "ↁ");
+        DIGITS.put(10000, "ↂ");
+        DIGITS.put(50000, "ↇ");
+        DIGITS.put(100000, "ↈ");
+        DIGITS.put(500000, "");
+        DIGITS.put(1000000, "");
+    }
+    */
     public String intToRoman(int num) {
         if (num < 0 || num > 399999) {
             throw new RuntimeException();
