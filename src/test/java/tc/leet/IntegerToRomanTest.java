@@ -68,10 +68,11 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
  * Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
  */
 public class IntegerToRomanTest {
+    private static IntegerToRoman s = new IntegerToRoman();
+
     @ParameterizedTest
     @MethodSource("testCases")
     void testIntToRoman(int num, String want) {
-        IntegerToRoman s = new IntegerToRoman();
         String got = s.intToRoman(num);
         Assertions.assertEquals(want, got);
     }
