@@ -81,7 +81,7 @@ public class IntegerToRoman {
             entry(1000000, "")
     );
     /*
-    private static final Map<Integer,String> DIGITS = new HashMap<>();
+    private static final Map<Integer,String> DIGITS = new TreeMap<>();
     static {
         DIGITS.put(1, "I");
         DIGITS.put(5, "V");
